@@ -1,4 +1,4 @@
-{% set version = "1.2-14" %}
+{% set version = "1.2-15" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/hypergeo_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/hypergeo/hypergeo_{{ version }}.tar.gz
-  sha256: bf379a5d5543ca20b7ac779555f504a3b98f421abadf782676c161426e6570e4
+  sha256: 4b7d59c9566f67ca34d64a9ec6d0ae4a6a0a2b6a5e9d6a59621c9583daf2ac22
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
